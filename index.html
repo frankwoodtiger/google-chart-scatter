@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- below is the correct way to use google's jsapi in a separated file, custom-logic.js-->
+		<!-- Must use a online version of jsapi thought --></!-->
+		<script type="text/javascript" src="https://www.google.com/jsapi?autoload= 
+			{'modules':[{'name':'visualization','version':'1.1','packages':
+			['corechart']}]}"></script>
+		<script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
+		<script type="text/javascript" src="js/custom-logic.js"></script>
+		<link rel="stylesheet" type="text/css" href="css/theme.css">
+	</head>
+	<body>
+		<div id="container">
+			<div id="chart_div"></div>
+			<label>Please enter data in comma/space separated format with matched number of data point for x and y</label>
+			<br></br>
+			<label>y: </label><input id="y-input" class="text-input" type="text" required/>
+			<br>
+			<br>
+			<label>x: </label><input id="x-input" class="text-input" type="text" required/>
+			<br>
+			<br>
+			<label>Trendline: </label>
+			<input type="radio" name="degree" value="none" checked="checked">none</input>
+			<input type="radio" name="degree" value="linear">linear</input>
+			<input type="radio" name="degree" value="polynomial">polynomial</input>
+			<input type="radio" name="degree" value="exponential">exponential</input>
+			<br>
+			<br>
+			<a class="button-submit" type="button">submit</a>
+		</div>
+	</body>
+</html>
