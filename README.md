@@ -19,15 +19,6 @@ This is a demo for how to use the Google visualization library for basic plottin
       <li>custom-logic.js - handling basic front-end logic</li>
     </ol>
   </li>
-  <li>Python CGI script to handle the neural network for recognizing handwritten digit
-    <ol>
-      <li>*-ubyte - actual training set of size 50,000  and test sample set of size 10,000 with total 60,000 28x28 images used by the neural network</li>
-      <li>thetas.mat - the actual trained weight matrix used for prediction</li>
-      <li>feedforward-prediction-cgi.py - loads the matrix in thetas.mat, and perform feedfoward prediction using the matrix.</li>
-      <li>train-handwritten-digit-cgi.py - trains the weight matrix and save it to thetas.mat</li>
-      <li>imshow-grayscale-mat.py - saves the raw pixel data under the CGI dir for debugging purpose.</li>
-    </ol>
-  </li>
 </ol>
 
 <ul><b>Proof of concept</b>
